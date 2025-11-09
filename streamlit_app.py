@@ -4,7 +4,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder # <<< 變更點
-from langchain_core.runnablables import RunnablePassthrough # 原始 import (RunnablePassthrough)
+from langchain_core.runnables import RunnablePassthrough # 原始 import (RunnablePassthrough)
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.messages import HumanMessage, AIMessage # <<< 變更點
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain # <<< 變更點
