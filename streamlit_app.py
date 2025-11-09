@@ -107,7 +107,7 @@ if all_keys_loaded:
                 st.markdown(message["content"])
 
         # 處理新的聊天輸入
-        if user_question := st.chat_input("請輸入關於幼教、腦科學的問題..."):
+        if user_question := st.chat_input("請輸入關於台灣文化的問題..."):
             # 顯示用戶訊息
             st.session_state.messages.append({"role": "user", "content": user_question})
             with st.chat_message("user"):
