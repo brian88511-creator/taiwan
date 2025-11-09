@@ -1,6 +1,5 @@
 pinecone
 langchain
-langchain-core
 langchain-openai
 langchain-pinecone
 langchain-community
