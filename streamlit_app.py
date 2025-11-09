@@ -5,7 +5,8 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 # 🌟 V-Memory 升級：匯入新工具
-from langchain.chains import create_history_aware_retriever, create_retrieval_chain
+from langchain.chains.history_aware_retriever import create_history_aware_retriever
+from langchain.chains.retrieval import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import MessagesPlaceholder # 專門用來放 "聊天記錄"
 from langchain_core.messages import HumanMessage, AIMessage # 用來轉換聊天記錄的格式
