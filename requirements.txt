@@ -1,13 +1,18 @@
-pinecone
-langchain
-langchain-openai
-langchain-pinecone
-langchain-community
-langchain-text-splitters
+# 1. App 框架
+streamlit
+
+# 2. LangChain 核心與夥伴套件
+langchain>=0.1.19       # 核心包 (會自動安裝 core, community, text-splitters)
+langchain-openai>=0.1.0   # OpenAI Embeddings
+langchain-pinecone>=0.1.0 # Pinecone 向量資料庫
+langchain-groq>=0.1.0     # Groq LLM
+
+# 3. 向量資料庫
+pinecone-client>=3.0.0  # 注意：'pinecone' 是舊套件, 'pinecone-client' 才是新版
+
+# 4. 文件讀取工具
 pypdf
-langchain_groq
 docx2txt
 pandas
 openpyxl
 unstructured
-streamlit
